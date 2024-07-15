@@ -80,3 +80,44 @@ if contraseña_ingresada.lower()== contraseña_almacenada.lower():
     print("la contraseña coincide.")
 else:
     print("la contraseña no coincide.")
+
+#ejercicio #14
+
+try:
+    dividiendo = float(input("ingresa el dividendo:"))
+    divisor = float(input("ingresa el divisor:"))
+
+    resultado = dividiendo / divisor
+
+    print("el resultado de la division es: ",resultado)
+except ZeroDivisionError:
+    print("Error:no se puede dividir entre cero ")
+
+
+    #ejercicio #15
+numero = int(input("Ingresa un número entero: "))
+
+if numero %2 == 0:
+    print("el numero" , numero, "es par.")
+else: 
+    print("el numero," , numero,"es impar.")
+
+
+    #ejercicio #16
+palabra = input("ingresa una palabra: ")
+
+for i in range (10):
+    print( palabra)
+
+
+    #ejercicio # 17
+numero =int ( input("ingresa un nunero entero positivo:"))
+
+numeros_impares = []
+
+for i in range ( 1,numero+1,2):
+    numeros_impares.append(i)
+
+resultado = " , ".join(str(x) for x in numeros_impares)
+
+print ( resultado)
